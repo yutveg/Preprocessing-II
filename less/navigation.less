@@ -1,1 +1,38 @@
 // Navigation Styles here
+#navbar {
+    width: 100%;
+    border-bottom: 2px dashed rgb(212, 212, 212);
+    nav {
+        padding: 2% 0;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div:last-child {
+            display: flex;
+            width: 40%;
+            justify-content: space-evenly;
+
+            @media @phone {
+                width: 100%;
+                padding: 2% 0;
+            }
+            a {
+                color: black;
+                font-size: 1.6rem;
+                text-decoration: none;
+            }
+            a:visited {
+                color: black;
+            }
+        }//Closes last div
+        @media @phone {
+            flex-flow: column nowrap;
+            h1 {
+                font-size: 2.5rem;
+                padding: 10% 0;
+            }
+        }
+    }//Closes nav
+}//Closes #navbar
