@@ -1,1 +1,17 @@
 // Mixins in here
+.btn-shtoyle(@color, @bgcolor, @border-radius) {
+    width: 85%;
+    font-size: 2rem;
+    padding: 5% 0;
+    color: @color;
+    background-color: @bgcolor;
+    border-radius: @border-radius;
+    text-align: center;
+
+    &:hover {
+        background-color: @color;
+        color: @bgcolor;
+        cursor: pointer;
+        border: 0.5px solid black;
+     }
+}
